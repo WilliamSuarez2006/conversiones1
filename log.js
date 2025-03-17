@@ -12,9 +12,8 @@ function ejecutar() {
 
 
 function abinario() {
-    
     let cod = document.getElementById("car-bin").value;
-    binario = ""; 
+    binario="";
     for (let i = 7; i >= 0; i--) {
         if (2 ** i <= cod) {
             binario = binario + "1";
@@ -38,7 +37,6 @@ function ejecutartton() {
         }
     }
     caracter = String.fromCharCode(suma);
-    document.getElementById("resultado-caracter").value="";
     document.getElementById("resultado-caracter").innerText = "El binario " + tbin + " en caracter es: " + caracter;
 }
 
